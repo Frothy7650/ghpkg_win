@@ -11,7 +11,7 @@ pub fn install_package(pkg_name_imut string)
   println("Installing package $pkg_name")
 
   // Import pkglist
-  pkglist_url := "http://pkg.frothy7650.org/pkglist.json"
+  pkglist_url := "http://pkg.frothy7650.org/windows.json"
   pkglist_text := http.get(pkglist_url) or {
     eprintln(chalk.red("Failed to fetch JSON: $err"))
     return

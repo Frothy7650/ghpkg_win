@@ -7,7 +7,7 @@ import os
 pub fn update()
 {
   // Import pkglist
-  pkglist_url := "http://pkg.frothy7650.org/pkglist.json"
+  pkglist_url := "http://pkg.frothy7650.org/windows.json"
   pkglist_raw := http.get(pkglist_url) or {
     eprintln(chalk.red("Failed to fetch pkglist: $err"))
     return
