@@ -19,26 +19,12 @@
 ---
 
 ## Installation
-### Linux
-If you are on Arch linux, or an Arch based distro, ghpkg is on the AUR.
-Make sure you have git and vlang.
-```bash
-git clone https://github.com/Frothy7650/ghpkg.git .ghpkg
-cd .ghpkg
-./install.sh
-```
 ### Windows
+It is reccomended to download the prebuild binary.
+#### Source
 Make sure you have git and vlang.
 ```bash
-git clone https://github.com/Frothy7650/ghpkg.git .ghpkg
+git clone https://github.com/Frothy7650/ghpkg_win.git .ghpkg
 cd ghpkg
 ./install.bat
 ```
-
-## Supported operating systems
-| OS | Supported |
-|----|-----------|
-| Windows | yes |
-| Arch linux | yes |
-| MacOS | no |
-| Debian | yes |
