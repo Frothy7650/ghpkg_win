@@ -17,7 +17,6 @@ REM Create db.json with empty JSON array if it doesn't exist
 IF NOT EXIST "%DB_PATH%" (
     echo [] > "%DB_PATH%"
 )
-v -os windows src/ -o build/ghpkg.exe
 
 echo ghpkg installed!
 echo DB path: %DB_PATH%
