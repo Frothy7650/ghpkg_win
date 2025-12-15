@@ -104,6 +104,10 @@ pub fn install_package(pkg_name_imut string)
   println(chalk.yellow("Building..."))
   os.system(ghpkg_json.build)
 
+  // Post command
+  println("Running post-install commands...")
+  os.system(ghpkg_json.post)
+
   // find binary PATHed location to move to
   mut binary_name := ''
   if ghpkg_json.binary_name.ends_with(".exe") {

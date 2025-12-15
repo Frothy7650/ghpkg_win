@@ -17,6 +17,7 @@ pub struct Ghpkg {
   clone_command string
   clone_url     string
   build         string
+  post          string
   binary_name   string
   binary_dir    string
   dependencies  []string
